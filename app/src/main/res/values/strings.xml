@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">E3rf Modrsk</string>
+    <string-array name="specificationArray">
+        <item>لغة عربية</item>
+        <item>لغة انجليزية</item>
+        <item>فرنساوي</item>
+        <item>فيزياء</item>
+        <item>كيمياء</item>
+        <item>رياضيات</item>
+        <item>احياء</item>
+        <item>جيولوجيا</item>
+        <item>فلسفة</item>
+        <item>تاريخ</item>
+        <item>جغرافيا</item>
+        <item>علم نفس</item>
+    </string-array>
+
+    <string name="selectImage">من فضلك اختر صورة</string>
+    <string name="cropImage">لم يتم قص الصورة</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

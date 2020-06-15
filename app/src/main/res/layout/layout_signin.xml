@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mount3"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:padding="48dp"
+    >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/e3rf1"
+                android:layout_marginTop="-20dp"
+                />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFF"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/login_nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="الإسم "
+                    android:textColor="#25CDCD"
+                    android:textColorHint="#FFFF"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:lines="1"
+                    android:singleLine="true"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textColorHint="#FFF"
+                android:backgroundTint="@color/white"
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/login_passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="كلمة المرور"
+                    android:textColor="#25CDCD"
+                    android:textColorHint="#FFFF"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/pass"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:gravity="right"
+                    android:textDirection="rtl"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+
+                >
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:text="أنا : "
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/typeRadioGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="طالب"
+                        android:textSize="20sp"
+                        android:textColor="#FFFF"
+                        android:buttonTint="@color/lightGreen"
+                        />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="معلم"
+                        android:textSize="20sp"
+                        android:textColor="#FFFF"
+                        android:buttonTint="@color/lightGreen"
+                        />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_selector"
+                android:text="دخول"
+                android:textColor="#FFF"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                />
+
+
+</LinearLayout>

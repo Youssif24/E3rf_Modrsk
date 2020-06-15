@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.TeacherProfile"
+    android:orientation="vertical"
+    android:background="@color/secondPrime"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/main_profile_layout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:orientation="horizontal"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tch_profile_imgId"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/e3rf1"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/white"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="3dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/settings_white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="-15dp"
+                    android:layout_marginLeft="-15dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/callBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_auricular_phone"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="-5dp"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="إتصال"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:id="@+id/tch_profile_nameID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/prime"
+                        android:textSize="20sp"
+                        />
+                    <TextView
+                        android:id="@+id/tch_profile_specID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#97999b"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginRight="-15dp"
+                    android:layout_marginLeft="-15dp"
+                    >
+                    <ImageButton
+                        android:id="@+id/msgBtn"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_msg1"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/transparent"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="رسالة"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_marginTop="-5dp"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#97999b"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tch_profile_rateID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4.0"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="تقييم"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#97999b"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#97999b"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/commentNumTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="25"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="تعليق"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#97999b"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#97999b"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:layout_marginTop="2dp"
+            app:tabSelectedTextColor="@color/green"
+            app:tabTextColor="@color/white"
+            android:theme="@style/myTabLayoutThem"
+
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#97999b"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <fragment
+            android:name="com.saad.youssif.e3rfmodrsk.Fragments.DetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/detailsFragment"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_internet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_internet"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="169dp"
+            android:gravity="center"
+            android:text="من فضلك تأكد من إتصالك بالإنترنت\n                ثم حاول مرة اخري ......... "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/try_againBtn"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="102dp"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="إعادة الإتصال"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

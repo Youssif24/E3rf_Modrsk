@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/mount1"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layoutDirection="rtl">
+
+
+    <LinearLayout
+        android:id="@+id/sign_as_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:text="تسجيل حساب ك : "
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/teacher_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="معلم"
+            android:background="@drawable/tch_selector_btn"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:layout_marginBottom="30dp"
+            android:textSize="25sp"
+
+            />
+
+        <Button
+            android:id="@+id/student_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="طالب"
+            android:background="@drawable/std_selector_btn"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_signUp_layout"
+        android:visibility="gone"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/reg_profileImg"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_user2"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            app:civ_border_overlay="true"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/studentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFF"
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="الإسم"
+                    android:textColor="@color/lightGreen"
+                    android:textColorHint="#FFFF"
+                    android:id="@+id/std_signUp_nameEt"
+                    android:singleLine="true"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFF"
+                android:layout_marginTop="20dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="السنة الدراسية"
+                    android:textColor="@color/lightGreen"
+                    android:id="@+id/std_signUp_studYearEt"
+                    android:textColorHint="#FFFF"
+                    android:singleLine="true"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#FFF">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="المدرسة"
+                    android:textColor="@color/lightGreen"
+                    android:textColorHint="#FFFF"
+                    android:id="@+id/std_signUp_schoolEt"
+                    android:singleLine="true"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColorHint="#FFF">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="كلمة المرور"
+                    android:textColor="@color/lightGreen"
+                    android:textColorHint="#FFFF"
+                    android:id="@+id/std_signUp_passwordEt"
+                    android:singleLine="true"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/teacher_layout"
+            android:visibility="gone"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFF"
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="الإسم"
+                    android:textColor="@color/lightGreen"
+                    android:textColorHint="#FFFF"
+                    android:id="@+id/tch_signUp_nameEt"
+                    android:singleLine="true"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFF"
+                android:layout_marginTop="10dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="العنوان"
+                    android:textColor="@color/lightGreen"
+                    android:textColorHint="#FFFF"
+                    android:id="@+id/tch_signUp_addressEt"
+                    android:singleLine="true"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#FFFF"
+                android:layout_marginTop="10dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="رقم الهاتف"
+                    android:textColor="@color/lightGreen"
+                    android:textColorHint="#FFFF"
+                    android:id="@+id/tch_signUp_phoneEt"
+                    android:singleLine="true"
+
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="التخصص"
+                android:textColor="#FFFF"
+                android:id="@+id/signUp_specificSpinner"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColorHint="#FFF">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="كلمة المرور"
+                    android:textColor="@color/lightGreen"
+                    android:textColorHint="#FFFF"
+                    android:id="@+id/tch_signUp_passwordEt"
+                    android:singleLine="true"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selector"
+            android:text="تسجيل"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

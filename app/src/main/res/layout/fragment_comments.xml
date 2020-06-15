@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layoutDirection="rtl"
+    android:background="@color/secondPrime"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/commentsRecycler"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="50dp"
+        ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/commentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/secondPrime"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:layoutDirection="ltr"
+        android:padding="3dp"
+
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_style"
+            android:hint="أُكتب تعليقا ً............."
+            android:paddingRight="15dp"
+            android:textSize="14sp"
+            android:textDirection="rtl"
+            android:textColor="@color/lightGray"
+            android:textColorHint="#97999b"
+
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_send_black_24dp"
+            android:background="@android:color/transparent"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
